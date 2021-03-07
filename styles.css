@@ -190,7 +190,7 @@ button#mobile-menu {
 .hero__description {
   font-size: 60px;
   
-  background-image: linear-gradient(to top, #ff2d08 0%, #ffb19f 100%);
+  background-image: linear-gradient(to top, #707070 0%, #000000 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -214,7 +214,7 @@ button#mobile-menu {
   display: center;
   justify-content: center;
   color: white;
-  background-image: url(images/Hands_OutThechest_Finished.png);
+  background-image: url(images/meltingHuman_BonesNewests.png);
   background-size: contain;
   background-repeat: no-repeat;
 
