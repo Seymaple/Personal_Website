@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -37,7 +37,7 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .fa-gem {
   margin-right: 0.5rem;
@@ -154,7 +154,7 @@ button#mobile-menu {
 
 .hero {
   background: rgb(255, 255, 255);
-  background: linear-gradient(to bottom, rgb(63, 63, 63), rgb(255, 255, 255)); 
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(255, 255, 255)); 
   padding: 200px 0;
 }
 
@@ -201,22 +201,27 @@ button#mobile-menu {
 
 
 .main__img--container{
-  text-align: center;
+  text-align:center;
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: -190px;
+  
+  justify-content: center;
 }
 .main__img--card {
   
-  Margin-left: center;
-  margin-right: center;
-  margin-top: -211px;
-  max-width: 2000px;
+  
+  
+  margin: auto;
+  max-width: 800px;
   height: 2000px;
   border-radius: 10px;
-  display: center;
-  justify-content: center;
-  color: white;
-  background-image: url(images/meltingHuman_BonesNewests.png);
+  background-image: url(images/Hands_OutThechest_Finished.png);
   background-size: contain;
   background-repeat: no-repeat;
+  
+  
 
 }
 
