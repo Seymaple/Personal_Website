@@ -1,4 +1,5 @@
 * {
+  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -31,7 +32,8 @@
 }
 #navbar__logo {
   background-image: linear-gradient(to top, #ffbd08 0%, #ffb19f 100%);
-  background-size: 100%;
+  
+  background-size: 100% ;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -156,12 +158,16 @@ button#mobile-menu {
 /*Hero section*/
 
 .hero {
-  background: rgb(0, 0, 0);
+  background: rgb(102, 102, 102);
   background: linear-gradient(to bottom, rgb(253, 184, 81), rgb(253, 184, 106)); 
   padding: 100px 0;
+  
 }
 
+
+
 .hero__container {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -175,8 +181,15 @@ button#mobile-menu {
 }
 
 .hero__heading {
+  
   font-size:  100px;
-  margin-top: -20px;
+  margin-top: -1px;
+  color: rgb(255, 255, 255);
+}
+
+.Hero__definition {
+  font-size:  px;
+  margin-top: 1px;
   color: rgb(255, 255, 255);
 }
 
@@ -196,14 +209,16 @@ button#mobile-menu {
   
   background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
   background-size: 100%;
+  margin-top: -15px;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -mo-text-fill-color: transparent;
+  
 }
 
 
 header {
+  
   margin: 5vw;
   font-size: 0;
   display: -ms-flexbox;
@@ -216,6 +231,7 @@ header {
 }
 
 header div{
+  
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto;
@@ -225,6 +241,7 @@ header div{
 }
 
 header div img{
+  
   width:100%;
   height:auto;
 }

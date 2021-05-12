@@ -1,8 +1,10 @@
 * {
+  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  
 }
 .navbar {
   background-image: url(images/Cover_Header_Design.png);
@@ -25,10 +27,13 @@
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 50px;
+  border-image: url(images/Cover_Header_Design.png);
+ 
 }
 #navbar__logo {
-  background-image: linear-gradient(to top, #ff2d08 0%, #ffb19f 100%);
-  background-size: 100%;
+  background-image: linear-gradient(to top, #ffbd08 0%, #ffb19f 100%);
+  
+  background-size: 100% ;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -153,17 +158,21 @@ button#mobile-menu {
 /*Hero section*/
 
 .hero {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(255, 255, 255)); 
-  padding: 200px 0;
+  background: rgb(102, 102, 102);
+  background: linear-gradient(to bottom, rgb(107, 107, 107), rgb(253, 184, 106)); 
+  padding: 100px 0;
+  
 }
 
+
+
 .hero__container {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width:1200px;
+  max-width:11px;
   margin: 0 auto;
   height: 1px;
   text-align:center;
@@ -172,10 +181,12 @@ button#mobile-menu {
 }
 
 .hero__heading {
-  font-size:  80px;
-  margin-top: -200px;
+  
+  font-size:  90px;
+  margin-top: -1px;
   color: rgb(255, 255, 255);
 }
+
 
 .hero__heading span {
   background-image: linear-gradient(to top, #ff2d08 0%, #ffb19f 100%);
@@ -188,41 +199,56 @@ button#mobile-menu {
 }
 
 .hero__description {
-  font-size: 60px;
+
+  font-size: 20px;
   
-  background-image: linear-gradient(to top, #707070 0%, #000000 100%);
+  background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
   background-size: 100%;
+  margin-top: 10px;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -mo-text-fill-color: transparent;
+  
 }
 
 
-
-.main__img--container{
-  text-align:center;
-  width: auto;
-  height: auto;
+header {
+  
+  margin: 5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
   display: flex;
-  margin-top: -190px;
-  
-  justify-content: center;
 }
-.main__img--card {
-  
-  
-  
-  margin: auto;
-  max-width: 800px;
-  height: 2000px;
-  border-radius: 10px;
-  background-image: url(images/Hands_OutThechest_Finished.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  
-  
 
+header div{
+  
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 400px;
+  margin: .5vw;
+
+}
+
+header div img{
+  
+  width:100%;
+  height:100%;
+}
+
+@media screen and (max-width: 400px) {
+  header div {
+    margin: 0;
+  }
+
+  header {
+    padding:0;
+  }
 }
 
 
