@@ -53,6 +53,34 @@
   list-style: none;
   text-align: center;
 }
+.BackModels__links{
+  font-size: x-large;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 20px;
+  height: 100%;
+}
+.NextModels__links{
+  font-size: x-large;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 5px;
+  height: 100%;
+}
+.NextModels__links:hover {
+  color: #ffb19f;
+  transition: all 0.3s ease;
+}
+.BackModels__links:hover {
+  color: #ffb19f;
+  transition: all 0.3s ease;
+}
 .navbar__item {
   height: -100px;
 }
@@ -159,8 +187,8 @@ button#mobile-menu {
 
 .hero {
   background: rgb(102, 102, 102);
-  background: linear-gradient(to bottom, rgb(253, 184, 81), rgb(253, 184, 106)); 
-  padding: 100px 0;
+  background: linear-gradient(to bottom, rgb(253, 184, 81), rgb(253, 184, 106));
+  padding: 70px 0;
   
 }
 
@@ -182,7 +210,7 @@ button#mobile-menu {
 
 .hero__heading {
   
-  font-size:  60px;
+  font-size:  100px;
   margin-top: -1px;
   color: rgb(255, 255, 255);
 }
@@ -205,11 +233,11 @@ button#mobile-menu {
 
 .hero__description {
 
-  font-size: 20px;
+  font-size: 40px;
   
-  background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
+  background-image: linear-gradient(to top, #000000 0%, #000000 100%);
   background-size: 100%;
-  margin-top: -5px;
+  margin-top: -15px;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -235,7 +263,7 @@ header div{
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto;
-  width: 400px;
+  width: 600px;
   margin: .5vw;
 
 }
@@ -245,8 +273,6 @@ header div img{
   width:100%;
   height:auto;
 }
-
-
 
 @media screen and (max-width: 400px) {
   header div {
