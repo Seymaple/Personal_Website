@@ -31,7 +31,7 @@
  
 }
 #navbar__logo {
-  background-image: linear-gradient(to top, #ffbd08 0%, #ffb19f 100%);
+  background-image: linear-gradient(to top, #505050 0%, #000000 100%);
   
   background-size: 100% ;
   -webkit-background-clip: text;
@@ -159,7 +159,7 @@ button#mobile-menu {
 
 .hero {
   background: rgb(102, 102, 102);
-  background: linear-gradient(to bottom, rgb(235, 235, 235), rgb(185, 185, 185)); 
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(41, 41, 41)); 
   padding: 100px 0;
   
 }
@@ -184,13 +184,13 @@ button#mobile-menu {
   
   font-size:  100px;
   margin-top: -1px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .Hero__definition {
   font-size:  px;
   margin-top: 1px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .hero__heading span {
@@ -207,7 +207,7 @@ button#mobile-menu {
 
   font-size: 40px;
   
-  background-image: linear-gradient(to top, #000000 0%, #000000 100%);
+  background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
   background-size: 100%;
   margin-top: -15px;
   -webkit-background-clip: text;
@@ -235,7 +235,7 @@ header div{
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto;
-  width: 600px;
+  width: 400px;
   margin: .5vw;
 
 }

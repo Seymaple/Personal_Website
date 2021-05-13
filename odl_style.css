@@ -246,6 +246,8 @@ header div img{
   height:auto;
 }
 
+
+
 @media screen and (max-width: 400px) {
   header div {
     margin: 0;
