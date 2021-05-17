@@ -288,16 +288,7 @@ p {
   
   
 } 
-.container__imageLinks {
-  display: inline-block;
-  vertical-align: top;
-  width: flex;
-  align-self: center;
-  margin: 5px 5px 0 0;
-  max-height: 10px;
-  max-width: 10px;
-  
-  }
+
 
  
 
