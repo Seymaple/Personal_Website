@@ -107,7 +107,7 @@ button#mobile-menu {
   #navbar__logo {
     padding-left: 1px;
     margin-left: 25px;
-    margin-top: -11000px;
+    
   }
   .navbar__toggle .bar {
     display: block;
@@ -183,7 +183,7 @@ button#mobile-menu {
 
 .hero__heading {
   
-  font-size:  100px;
+  font-size:  70px;
   margin-top: -1px;
   color: rgb(255, 255, 255);
 }
