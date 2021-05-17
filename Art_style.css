@@ -219,7 +219,7 @@ button#mobile-menu {
 
 header {
   
-  margin: 5vw;
+  margin: 1vw;
   font-size: 0;
   display: -ms-flexbox;
   -ms-flexbox-wrap: wrap;
@@ -236,7 +236,8 @@ header div{
   -ms-flex: auto;
   flex: auto;
   width: 600px;
-  margin: .5vw;
+  margin: .2vw;
+  
 
 }
 

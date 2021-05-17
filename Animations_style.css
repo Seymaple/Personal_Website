@@ -219,7 +219,7 @@ button#mobile-menu {
 
 header {
   
-  margin: 5vw;
+  margin: 1vw;
   font-size: 0;
   display: -ms-flexbox;
   -ms-flexbox-wrap: wrap;
@@ -228,6 +228,9 @@ header {
   flex-flow: row wrap;
   display: -webkit-box;
   display: flex;
+  padding: 10px;
+  margin: auto;
+   
 }
 
 header div{
@@ -235,26 +238,43 @@ header div{
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto;
-  width: 400px;
-  margin: .5vw;
-
-}
-
-header div img{
   
-  width:100%;
-  height:auto;
+  width: 600px;
+  margin: .5vw;
+  margin-top: 0vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse
+  
+  
+  
+  
+  
+
 }
 
-@media screen and (max-width: 400px) {
+header div iframe{
+  
+  width:flex;
+  height:flex;
+  
+  
+}
+
+
+
+@media screen and (max-width: 700px) {
   header div {
-    margin: 0;
+    display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  width: 400px;
+    
   }
 
   header {
     padding:0;
   }
 }
-
 
 
