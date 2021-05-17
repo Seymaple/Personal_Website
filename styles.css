@@ -17,6 +17,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+ 
 }
 .navbar__container {
   display: flex;
@@ -107,6 +108,7 @@ button#mobile-menu {
   #navbar__logo {
     padding-left: 1px;
     margin-left: 25px;
+    margin-top: -11000px;
   }
   .navbar__toggle .bar {
     display: block;
