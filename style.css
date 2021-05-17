@@ -216,7 +216,7 @@ button#mobile-menu {
 
 header {
   
-  margin: 1vw;
+  margin: 4vw;
   font-size: 0;
   display: -ms-flexbox;
   -ms-flexbox-wrap: wrap;
@@ -238,7 +238,7 @@ header div{
 }
 
 header div img{
-  margin-top: -20px;
+  margin-top: -10px;
   width:100%;
   height:100%;
 }
