@@ -88,7 +88,8 @@ button#mobile-menu {
   .navbar__menu {
     display: none;
     margin: 0;
-    width: 112%;
+    width: 113%;
+    
     position: absolute;
     margin-left: -50px;
     top: 80px;
@@ -99,7 +100,7 @@ button#mobile-menu {
     background-size: 100%;
     background-position-x: center;
     background-position-y: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
   }
   .navbar__menu.active {
     display: block;
@@ -107,7 +108,7 @@ button#mobile-menu {
   #navbar__logo {
     padding-left: 1px;
     margin-left: 25px;
-    
+    margin-top: -11000px;
   }
   .navbar__toggle .bar {
     display: block;
