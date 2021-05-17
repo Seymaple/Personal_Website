@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRIME Room</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="/Lipid_Style.css" />
+  <style>
+    model-viewer{
+      width:auto;
+      height: 700px;
+      Margin: 50px;
+      margin-top: 10px;
+      background: rgb(187, 187, 187)
+    }
+  </style>
+</head>
+<body> 
+  <body>
+    
+    <nav class="navbar">
+      <div class="navbar__container">
+        <img src="images/logo.png"  alt="MyLogo" > 
+        <a href="/" id="navbar__logo">SeyMaple</a>
+        <button id="mobile-menu" class="navbar__toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/Odl.html" class="navbar__links">Odl</a>
+          </li>
+          <li class="navbar__item">
+            <a href="Art.html" class="navbar__links">Art</a>
+          </li>
+          <li class="navbar__item">
+            <a href="Animations.html" class="navbar__links">Animations</a>
+          </li>
+          <li class="navbar__item">
+            <a href="About.html" class="navbar__links">About</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  
+    <!--hero Section-->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 Class="hero__heading">Eukaryotic Cell</h1>
+        <p Class="hero__description"></p>
+        <p Class="Hero__definition">ODL</p>
+       
+    </div>
+    </div>
+
+    <nav class="BacktoModels">
+        <a href="/3D_Models.html" class="BackModels__links">3D Models List</a>
+      </li>
+    </nav>
+    
+      
+    </nav>
+  <model-viewer src="gltf/Cell_Eukaryotic/Cell_Eukaryotic.gltf" alt="Glock" auto-rotate camera-controls environment-image="/images/autoshop_01_1k.hdr"> </model-viewer>
+  
+ 
+</body>
+<script src="app.js"></script>
+</html>   

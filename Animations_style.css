@@ -240,8 +240,8 @@ header div{
   -ms-flex: auto;
   flex: auto;
   
-  width: 600px;
-  margin: .5vw;
+  width: 500px;
+  margin: .4vw;
   margin-top: 0vw;
   display: flex;
   justify-content: center;
