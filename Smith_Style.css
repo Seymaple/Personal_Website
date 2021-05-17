@@ -135,7 +135,7 @@ button#mobile-menu {
   #navbar__logo {
     padding-left: 1px;
     margin-left: 25px;
-    margin-top: -11000px;
+    
   }
   .navbar__toggle .bar {
     display: block;
@@ -211,14 +211,14 @@ button#mobile-menu {
 
 .hero__heading {
   
-  font-size:  55px;
-  margin-top: 5px;
+  font-size:  50px;
+  margin-top: -1px;
   color: rgb(255, 255, 255);
 }
 
 .Hero__definition {
-  font-size:  10px;
-  margin-top: -1px;
+  font-size:  px;
+  margin-top: 11px;
   color: rgb(255, 255, 255);
 }
 
@@ -238,7 +238,7 @@ button#mobile-menu {
   
   background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
   background-size: 100%;
-  margin-top: -5px;
+  margin-top: -8px;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
