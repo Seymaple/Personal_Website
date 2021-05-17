@@ -229,6 +229,8 @@ header {
   display: -webkit-box;
   display: flex;
   padding: 10px;
+  margin: auto;
+   
 }
 
 header div{
@@ -237,9 +239,15 @@ header div{
   -ms-flex: auto;
   flex: auto;
   
-  width: 400px;
-  margin: 8.5vw;
+  width: 600px;
+  margin: .5vw;
   margin-top: 0vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse
+  
+  
+  
   
   
 
@@ -248,15 +256,20 @@ header div{
 header div iframe{
   
   width:flex;
-  height:500px;
+  height:flex;
+  
   
 }
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   header div {
-    margin: 0;
+    display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  width: 400px;
+    
   }
 
   header {
