@@ -285,11 +285,14 @@ header div img{
   width:50%;
   height:auto;
 }
-header div image{
+header nav img{
   
-  width:50%;
-  height:10px;
+  display:row;
+  max-width: 90px;
+  max-height:90px
+  
 }
+
 .container_two {
  
   padding: 0px 10px 10px;
