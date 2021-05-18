@@ -267,6 +267,7 @@ header div img{
   margin: 15px 15px 0 0;
   max-height: 600px;
   max-width: 600px;
+  width:calc(40vw + .5rem);
   
   }
 .container__text {
@@ -280,31 +281,21 @@ header div img{
 p {
   font-size: calc(1vw + .5rem);
 }
-
+header div  img{
+  
+  width:5%;
+  height:auto;
+}
 .container_two {
  
-  padding: 0px 0px 0px;
-  max-width: 170px;
-  display: flexbox;
+  padding: 0px 10px 10px;
+  max-width: 10px;
+  
   display: column;
   
 } 
-.container_three {
- 
-  padding: 0px 0px 0px;
-  max-width: 160px;
-  display: flexbox;
-  display: column;
-  
-} 
-.container_four {
- 
-  padding: 0px 0px 0px;
-  max-width: 160px;
-  display: flexbox;
-  display: column;
-  
-} 
+
+
 
 
  
