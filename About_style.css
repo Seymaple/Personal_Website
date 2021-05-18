@@ -285,11 +285,11 @@ header div img{
   width:50%;
   height:auto;
 }
-header nav img{
+header nav img {
   
   display:row;
-  max-width: 90px;
-  max-height:90px
+  max-width: 80px;
+  max-height:80px
   
 }
 
@@ -297,8 +297,8 @@ header nav img{
  
   padding: 0px 10px 10px;
   max-width: 10px;
+  display: flex;
   
-  display: column;
   
 } 
 
