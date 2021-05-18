@@ -190,9 +190,10 @@ button#mobile-menu {
 }
 
 .Hero__definition {
-  font-size:  px;
-  margin-top: 1px;
+  font-size:  12px;
+  margin-top: 171px;
   color: rgb(255, 255, 255);
+  position: absolute;
 }
 
 .hero__heading span {
