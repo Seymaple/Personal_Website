@@ -267,7 +267,6 @@ header div img{
   margin: 15px 15px 0 0;
   max-height: 600px;
   max-width: 600px;
-  width:calc(40vw + .5rem);
   
   }
 .container__text {
@@ -281,9 +280,9 @@ header div img{
 p {
   font-size: calc(1vw + .5rem);
 }
-header div  img{
+header div div img{
   
-  width:5%;
+  width:50%;
   height:auto;
 }
 .container_two {
