@@ -284,14 +284,12 @@ header div img{
   
   width:50%;
   height:auto;
-  
 }
 header nav img {
   
-  display:flexbox;
+  display:row;
   max-width: 80px;
   max-height:80px
-  
   
 }
 
