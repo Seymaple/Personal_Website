@@ -265,7 +265,7 @@ header div img{
   width: flex;
   align-self: center;
   margin: 15px 15px 0 0;
-  max-height: 400px;
+  max-height: 600px;
   max-width: 600px;
   
   }
@@ -283,26 +283,26 @@ p {
 
 .container_two {
  
-  padding: 0px 10px 10px;
+  padding: 0px 0px 0px;
   max-width: 170px;
   display: flexbox;
-  
+  display: column;
   
 } 
 .container_three {
  
-  padding: 0px 10px 10px;
+  padding: 0px 0px 0px;
   max-width: 160px;
   display: flexbox;
-  
+  display: column;
   
 } 
 .container_four {
  
-  padding: 0px 10px 10px;
+  padding: 0px 0px 0px;
   max-width: 160px;
   display: flexbox;
-  
+  display: column;
   
 } 
 
