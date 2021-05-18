@@ -280,10 +280,15 @@ header div img{
 p {
   font-size: calc(1vw + .5rem);
 }
-header div div img{
+header div img{
   
   width:50%;
   height:auto;
+}
+header div image{
+  
+  width:50%;
+  height:10px;
 }
 .container_two {
  
