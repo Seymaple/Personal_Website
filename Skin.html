@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitochondria</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="/Room_Style.css" />
+  <style>
+    model-viewer{
+      width:auto;
+      height: 700px;
+      Margin: 2px;
+      margin-top: 10px;
+      background: rgb(187, 187, 187)
+    }
+
+      button{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: none;
+    
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 3px solid rgb(255, 255, 255);
+  }
+
+
+  
+
+  #annotation{
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(10px, 10px);
+    border-radius: 1px;
+    padding: 1.2px;
+  }
+  /* This keeps child nodes hidden while the element loads */
+  :not(:defined) > * {
+    display: none;
+  }
+  </style>
+</head>
+<body> 
+  <body>
+    
+    <nav class="navbar">
+      <div class="navbar__container">
+        
+        <a href="/" id="navbar__logo">SeyMaple</a>
+        <button id="mobile-menu" class="navbar__toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/Odl.html" class="navbar__links">Odl</a>
+          </li>
+          <li class="navbar__item">
+            <a href="Art.html" class="navbar__links">Art</a>
+          </li>
+          <li class="navbar__item">
+            <a href="Animations.html" class="navbar__links">Animations</a>
+          </li>
+          <li class="navbar__item">
+            <a href="About.html" class="navbar__links">About</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  
+    <!--hero Section-->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 Class="hero__heading">SkinDiagram</h1>
+        <p Class="hero__description"> </p>
+        <p Class="Hero__definition">ODL</p>
+       
+    </div>
+    </div>
+
+    <nav class="BacktoModels">
+        <a href="/3D_Models.html" class="BackModels__links">3D Models List</a>
+      </li>
+    </nav>
+    <nav class="NextModel">
+        <a href="/Mito.html" class="NextModels__links">Next Model</a>
+      </li>
+      
+    </nav>
+  <model-viewer src="gltf/SkinDiagram/SkinDiagram.gltf" alt="Skin" auto-rotate camera-controls environment-image="/images/urban_street_02_2k.hdr">
+  
+  <button slot="hotspot-hand" data-position="-1.5 0.93 -0.4" data-normal="-0.73 0.05 0.69">
+    <div id="annotation">Sweat Glad Duct</div>
+  </button>
+  <button slot="hotspot-foot" data-position="-1.5 0.93 .49" data-normal="-0.07 0.97 0.23" data-visibility-attribute="visible">
+    <div id="annotation">Nerve</div>
+  </button>
+  <button slot="hotspot-foot2" data-position="-.20 -.49 1.29" data-normal="-0.07 0.97 0.23" data-visibility-attribute="visible">
+    <div id="annotation">Hair Follicle</div>
+  </button>
+  <button slot="hotspot-foot3" data-position="-.33 -3.13 1.29" data-normal="-0.07 0.97 0.23" data-visibility-attribute="visible">
+    <div id="annotation">Adipose tissue (Fat)</div>
+  </button>
+  <button slot="hotspot-foot4" data-position=".5 0.27 1.29" data-normal="-0.07 0.97 0.23" data-visibility-attribute="visible">
+    <div id="annotation">Hair Erector Muscle</div>
+  </button>
+  <button slot="hotspot-foot5" data-position=".43 1.13 1.29" data-normal="-0.07 0.97 0.23" data-visibility-attribute="visible">
+    <div id="annotation">Oil Gland (produces sebum)</div>
+  </button>
+  
+</model-viewer>
+ 
+</body>
+<script src="app.js"></script>
+</html>   
