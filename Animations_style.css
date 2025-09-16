@@ -1,4 +1,4 @@
-/* ---------------- RESET ---------------- */
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +6,7 @@
   font-family: sans-serif;
 }
 
-/* ---------------- NAVBAR ---------------- */
+/* Navbar */
 .navbar {
   background: url(images/Background_Cover.PNG) top/cover no-repeat;
   height: 80px;
@@ -17,7 +17,6 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  border: none;
 }
 
 .navbar__container {
@@ -40,7 +39,7 @@
 }
 
 #navbar__logo span {
-  background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
+  background-image: linear-gradient(to top, #ffffff, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
@@ -50,7 +49,6 @@
 .logo-img {
   height: 40px;
   width: auto;
-  display: block;
 }
 
 .navbar__menu {
@@ -59,18 +57,14 @@
   list-style: none;
 }
 
-.navbar__item {
-  height: 80px;
-}
-
 .navbar__links {
   color: azure;
+  padding: 0 2rem;
+  text-decoration: none;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  padding: 0 2rem;
-  height: 100%;
   transition: color 0.3s ease;
 }
 
@@ -87,7 +81,7 @@ button#mobile-menu {
 }
 
 .navbar__toggle .bar {
-  display: none; /* hidden by default, shown in mobile */
+  display: none;
   width: 30px;
   height: 3px;
   margin: 5px auto;
@@ -95,20 +89,12 @@ button#mobile-menu {
   transition: all 0.3s ease-in-out;
 }
 
-/* ---------------- HERO ---------------- */
+/* Hero */
 .hero {
-  background: 
-    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)),  /* dark overlay */
-    url(images/Cover_Header_Design.png) center/cover no-repeat;
-  padding: 10px 0;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)),
+              url(images/Cover_Header_Design.png) center/cover no-repeat;
+  padding: 20px 0;
   text-align: center;
-}
-
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero__heading {
@@ -116,59 +102,46 @@ button#mobile-menu {
   color: #fff;
 }
 
-.hero__heading span {
-  background-image: linear-gradient(to top, #ff2d08 0%, #ffb19f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .hero__description {
-  font-size: 40px;
-  background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-top: -15px;
-}
-
-.Hero__definition {
-  font-size: 1rem;
+  font-size: 30px;
   color: #fff;
-  margin-top: 1px;
+  margin-top: 5px;
 }
 
-/* ---------------- HEADER CONTENT ---------------- */
-header {
-  margin: 1vw auto;
-  padding: 10px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 0.4vw;
+/* Video Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-header div {
-  flex: auto;
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-}
-
-header div iframe {
+.video-wrapper {
+  position: relative;
   width: 100%;
-  height: auto;
+  padding-top: 56.25%; /* 16:9 */
+  overflow: hidden;
+  border-radius: 6px;
+  background: #000;
 }
 
-/* ---------------- MOBILE ---------------- */
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Mobile */
 @media screen and (max-width: 960px) {
   button#mobile-menu {
     display: block;
   }
-
   .navbar__toggle .bar {
     display: block;
   }
-
   .navbar__menu {
     display: none;
     flex-direction: column;
@@ -178,25 +151,15 @@ header div iframe {
     left: 0;
     background: url(images/Background_Cover.PNG) center/cover no-repeat;
     z-index: 999;
-    padding: 0;
-    margin: 0;
   }
-
   .navbar__menu.active {
     display: flex;
   }
-
-  .navbar__item {
-    width: 100%;
-  }
-
   .navbar__links {
-    text-align: center;
     padding: 1.2rem;
     width: 100%;
+    text-align: center;
   }
-
-  /* Hamburger animation */
   #mobile-menu.is-active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -205,9 +168,5 @@ header div iframe {
   }
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
-
-  header {
-    padding: 0;
   }
 }
