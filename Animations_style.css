@@ -97,8 +97,10 @@ button#mobile-menu {
 
 /* ---------------- HERO ---------------- */
 .hero {
-  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(41, 41, 41));
-  padding: 100px 0;
+  background: 
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)),  /* dark overlay */
+    url(images/Cover_Header_Design.png) center/cover no-repeat;
+  padding: 10px 0;
   text-align: center;
 }
 
