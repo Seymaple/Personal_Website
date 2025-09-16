@@ -8,72 +8,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
+  <!-- Navbar -->
     <nav class="navbar">
-      
       <div class="navbar__container">
-        
-        <a href="/" id="navbar__logo">SeyMaple</a>
+        <a href="/" id="navbar__logo">
+          <img src="images/logo.png" alt="SeyMaple Logo" class="logo-img" />
+          <span>SeyMaple</span>
+        </a>
         
         <button id="mobile-menu" class="navbar__toggle">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
+
         <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/Odl.html" class="navbar__links">Odl</a>
-          </li>
-          <li class="navbar__item">
-            <a href="Art.html" class="navbar__links">Art</a>
-          </li>
-          <li class="navbar__item">
-            <a href="Animations.html" class="navbar__links">Animations</a>
-          </li>
-          <li class="navbar__item">
-            <a href="About.html" class="navbar__links">About</a>
-          </li>
-          
+          <li class="navbar__item"><a href="/" class="navbar__links">Home</a></li>
+          <li class="navbar__item"><a href="/Odl.html" class="navbar__links">Odl</a></li>
+          <li class="navbar__item"><a href="Art.html" class="navbar__links">Art</a></li>
+          <li class="navbar__item"><a href="Animations.html" class="navbar__links">Animations</a></li>
+          <li class="navbar__item"><a href="About.html" class="navbar__links">About</a></li>
         </ul>
       </div>
-
     </nav>
 
-    <!--hero Section-->
-    <div class="hero" id="home">
-      <div class="hero__container">
-        <h1 Class="hero__heading">Projects</h1>
-        <p Class="hero__description">ODL & Personal</p>
-        
-      </div>
-      </div>
-      <header >
-          <div>
-          <a href="/Odl.html">
-            <img src="images/ODL_COVER.png" alt="" width="600" height="425" title="odl">         
-            <span>odl</span>
-            </a>
-          </div>
-    
-        <div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero__images">
+        <a href="/Odl.html">
+          <img src="images/ODL_COVER.png" alt="ODL Project Cover" title="ODL" />
+        </a>
         <a href="/Art.html">
-          <img src="images/ART_COVER.png" alt="" width="600" height="425" title="Art">
-          <span>ARt</span>
-          </a>
-        </div>
-          <div>
-          <a href="/Animations.html">
-            <img src="images/ANIMATION_COVER.png" alt="" width="600" height="425" title="Animation">
-            <span>Animation</span>
-            </a>
-          </div>
-      
-      
-        
-      </header>
+          <img src="images/ART_COVER.png" alt="Art Project Cover" title="Art" />
+        </a>
+        <a href="/Animations.html">
+          <img src="images/ANIMATION_COVER.png" alt="Animation Project Cover" title="Animation" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Decorative strip below hero -->
+    <section class="hero-footer"></section>
+
     <script src="app.js"></script>
-    
   </body>
-</html>   
+</html>

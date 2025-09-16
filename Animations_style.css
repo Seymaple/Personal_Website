@@ -1,69 +1,84 @@
+/* Reset */
 * {
-  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  
 }
+
+/* Navbar */
 .navbar {
-  background-image: url(images/Cover_Header_Design.png);
-  background-repeat: no-repeat;
+  background: url(images/Background_Cover.PNG) Top/cover no-repeat;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.15rem;
   position: sticky;
   top: 0;
   z-index: 999;
+  border: none;   /* make sure no border */
 }
+
 .navbar__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 80px;
-  z-index: 1;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 50px;
-  border-image: url(images/Cover_Header_Design.png);
- 
+  border: none;   /* prevent white line */
+  outline: none;
 }
 #navbar__logo {
-  background-image: linear-gradient(to top, #ffbd08 0%, #ffb19f 100%);
-  
-  background-size: 100% ;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
   display: flex;
   align-items: center;
-  cursor: pointer;
+  gap: 10px; /* space between image and text */
   text-decoration: none;
-  font-size: 1rem;
+  cursor: pointer;
 }
-.fa-gem {
-  margin-right: 0.5rem;
+
+#navbar__logo span {
+  background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-img {
+  height: 40px; /* adjust size */
+  width: auto;
+  display: block;
 }
 .navbar__menu {
-  display: flex;
+  display: flex;           /* row layout */
   align-items: center;
-  list-style: none;
-  text-align: center;
+  list-style: none;        /* remove bullets */
+  margin: 0;
+  padding: 0;
+  
 }
+
 .navbar__item {
-  height: -100px;
+  height: 80px;
 }
+
 .navbar__links {
   color: azure;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 0 5rem;
+  padding: 0 2rem;
   height: 100%;
+}
+
+.navbar__links:hover {
+  color: #ffb19f;
+  transition: all 0.3s ease;
 }
 .navbar__links:hover {
   color: #ffb19f;
@@ -85,22 +100,22 @@ button#mobile-menu {
     max-width: 1300px;
     padding: 0;
   }
-  .navbar__menu {
+.navbar__menu {
     display: none;
     margin: 0;
     width: 113%;
-    
+
     position: absolute;
     margin-left: -50px;
     top: 80px;
     opacity: 1;
     transition: all 0.01s ease;
     z-index: -1;
-    background-image: url(images/Cover_Header_Design.png);
-    background-size: 100%;
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: repeat;
+
+    background-image: url(images/Background_Cover.PNG);
+    background-size: cover;       /* fills container, crops if needed */
+    background-position: center;  /* keeps image centered */
+    background-repeat: no-repeat; /* don’t tile */
   }
   .navbar__menu.active {
     display: block;
@@ -129,13 +144,7 @@ button#mobile-menu {
     width: 105%;
     display: table;
   }
-  #mobile-menu {
-    position: absolute;
-    right: 15px;
-    transform: translate(5%, 20%);
-    width: 50px;
-    height: 50px;
-  }
+
   button#mobile-menu {
     background-color: #000;
     border: none;
@@ -264,19 +273,52 @@ header div iframe{
 }
 
 
-
-@media screen and (max-width: 700px) {
-  header div {
+@media screen and (max-width: 960px) {
+  button#mobile-menu {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .navbar__toggle .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;            /* full width of the screen */
+    position: absolute;
+    top: 80px;
+    left: 0;                /* align with left edge */
+    margin: 0;
+    padding: 0;
+    background: url(images/Background_Cover.PNG) center/cover no-repeat;
+    z-index: 999;
+  }
+  
+  .navbar__menu.active {
     display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-  width: 400px;
-    
   }
 
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
   header {
     padding:0;
   }
-}
 
 
