@@ -1,4 +1,4 @@
-/* Reset */
+/* ---------------- RESET ---------------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,9 +6,9 @@
   font-family: sans-serif;
 }
 
-/* Navbar */
+/* ---------------- NAVBAR ---------------- */
 .navbar {
-  background: url(images/Background_Cover.PNG) Top/cover no-repeat;
+  background: url(images/Background_Cover.PNG) top/cover no-repeat;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  border: none;   /* make sure no border */
+  border: none;
 }
 
 .navbar__container {
@@ -29,13 +29,12 @@
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 50px;
-  border: none;   /* prevent white line */
-  outline: none;
 }
+
 #navbar__logo {
   display: flex;
   align-items: center;
-  gap: 10px; /* space between image and text */
+  gap: 10px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -49,17 +48,15 @@
 }
 
 .logo-img {
-  height: 40px; /* adjust size */
+  height: 40px;
   width: auto;
   display: block;
 }
+
 .navbar__menu {
-  display: flex;           /* row layout */
+  display: flex;
   align-items: center;
-  list-style: none;        /* remove bullets */
-  margin: 0;
-  padding: 0;
-  
+  list-style: none;
 }
 
 .navbar__item {
@@ -74,194 +71,98 @@
   text-decoration: none;
   padding: 0 2rem;
   height: 100%;
+  transition: color 0.3s ease;
 }
 
 .navbar__links:hover {
   color: #ffb19f;
-  transition: all 0.3s ease;
 }
+
 button#mobile-menu {
   display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
 }
 
-@media screen and (max-width: 960px) {
-  .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    max-width: 1300px;
-    padding: 0;
-  }
-  .navbar__menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    background: url(images/Background_Cover.PNG) center/cover no-repeat;
-    z-index: 999;
+.navbar__toggle .bar {
+  display: none; /* hidden on desktop */
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
-   
-  .navbar__menu.active {
-    display: block;
-  }
-  #navbar__logo {
-    padding-left: 1px;
-    margin-left: 25px;
-    
-  }
-  .navbar__toggle .bar {
-    display: block;
-    width: 30px;
-    height: 2.5px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background: #fff;
-    cursor: pointer;
-  }
-  .navbar__item {
-    width: 100%;
-  }
-  .navbar__links {
-    text-align: center;
-    padding: 1.2rem;
-    margin-top: 2px;
-    width: 105%;
-    display: table;
-  }
-
-  button#mobile-menu {
-    background-color: #000;
-    border: none;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(2) {
-    opacity:0;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg)
-  }
-
-  #mobile-menu.is-active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg)
-  }
-
-
-}
-
-
-/*Hero section*/
-
+/* ---------------- HERO ---------------- */
 .hero {
-  background: rgb(102, 102, 102);
-  background: linear-gradient(to bottom, rgb(253, 184, 81), rgb(253, 184, 106)); 
+  background: linear-gradient(to bottom, rgb(253, 184, 81), rgb(253, 184, 106));
   padding: 100px 0;
-  
+  text-align: center;
 }
-
-
 
 .hero__container {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width:11px;
-  margin: 0 auto;
-  height: 1px;
-  text-align:center;
-  padding: 2px;
-
 }
 
 .hero__heading {
-  
-  font-size:  100px;
-  margin-top: -1px;
-  color: rgb(255, 255, 255);
-}
-
-.Hero__definition {
-  font-size:  px;
-  margin-top: 1px;
-  color: rgb(255, 255, 255);
+  font-size: 100px;
+  color: #fff;
 }
 
 .hero__heading span {
   background-image: linear-gradient(to top, #ff2d08 0%, #ffb19f 100%);
-  
-  background-size: 100%;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -mo-text-fill-color: transparent;
 }
 
 .hero__description {
-
   font-size: 40px;
-  
   background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
-  background-size: 100%;
-  margin-top: -15px;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
+  margin-top: -15px;
 }
 
+.Hero__definition {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 1px;
+}
 
+/* ---------------- HEADER CONTENT ---------------- */
 header {
-  
-  margin: 1vw;
+  margin: 1vw auto;
   font-size: 0;
-  display: -ms-flexbox;
-  -ms-flexbox-wrap: wrap;
-  -ms-flexbox-direction: column;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  display: -webkit-box;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.5vw;
 }
 
-header div{
-  
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
+header div {
   flex: auto;
   width: 400px;
-  margin: .5vw;
-
+  margin: 0.5vw;
 }
 
-header div img{
-  
-  width:100%;
-  height:auto;
+header div img {
+  width: 100%;
+  height: auto;
 }
 
-
-/* Hamburger menu for mobile */
+/* ---------------- MOBILE ---------------- */
 @media screen and (max-width: 960px) {
   button#mobile-menu {
     display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
   }
 
   .navbar__toggle .bar {
     display: block;
-    width: 30px;
-    height: 3px;
-    margin: 5px auto;
-    background: #fff;
-    transition: all 0.3s ease-in-out;
   }
 
   .navbar__menu {
@@ -273,22 +174,32 @@ header div img{
     left: 0;
     background: url(images/Background_Cover.PNG) center/cover no-repeat;
     z-index: 999;
+    margin: 0;
+    padding: 0;
   }
 
   .navbar__menu.active {
     display: flex;
   }
 
+  .navbar__item {
+    width: 100%;
+  }
+
+  .navbar__links {
+    text-align: center;
+    padding: 1.2rem;
+    width: 100%;
+  }
+
+  /* Hamburger animation */
   #mobile-menu.is-active .bar:nth-child(2) {
     opacity: 0;
   }
-
   #mobile-menu.is-active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
