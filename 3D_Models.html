@@ -1,122 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3D WORK</title>
-    <link rel="stylesheet" href="3D_Models_style.css" />
-  </head>
-  <body>
-    
-    <nav class="navbar">
-      <div class="navbar__container">
-        
-        <a href="/" id="navbar__logo">SeyMaple</a>
-        <button id="mobile-menu" class="navbar__toggle">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/Odl.html" class="navbar__links">Odl</a>
-          </li>
-          <li class="navbar__item">
-            <a href="Art.html" class="navbar__links">Art</a>
-          </li>
-          <li class="navbar__item">
-            <a href="Animations.html" class="navbar__links">Animations</a>
-          </li>
-          <li class="navbar__item">
-            <a href="About.html" class="navbar__links">About</a>
-          </li>
-        </ul>
-      </div>
 
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Models | Sey(Maple)Yeaple</title>
+  <link rel="stylesheet" href="clean_style.css" />
+</head>
 
-    <!--hero Section-->
-    <div class="hero" id="home">
-      <div class="hero__container">
-        <h1 Class="hero__heading">3D Models</h1>
-        <p Class="hero__description">ODL</p>
-        <p Class="Hero__definition">A couple of the Models I made or scanned for various projects</p>
-       
-    </div>
-    </div>
-  </div>
-</div>
-<header >
-
-  <div>
-    <a href="/Skin.html">
-      <img src="images/SkinDiagram.png" alt="" width="600" height="425" title="Skin">
-      <span>SkinDiagram</span>
+<body class="grove-center-page">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">
+        <img src="images/logo.png" alt="SeyMaple Logo" class="logo-img" />
+        <span>SeyMaple</span>
       </a>
+
+      <button id="mobile-menu" class="navbar__toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="Odl.html" class="navbar__links">The Grove Center</a></li>
+        <li class="navbar__item"><a href="Art.html" class="navbar__links">Art</a></li>
+        <li class="navbar__item"><a href="Animations.html" class="navbar__links">Animations</a></li>
+        <li class="navbar__item"><a href="About.html" class="navbar__links">About</a></li>
+      </ul>
     </div>
-    
-    <div>
-    <a href="/Mito.html">
-      <img src="images/Mito_cover.png" alt="" width="600" height="425" title="Mito">
-      <span>Mito</span>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="hero__container">
+      <h1 class="page-title">3D Models</h1>
+      <p class="page-subtitle">ODL Project Assets and Scans</p>
+    </div>
+  </header>
+
+  <!-- Card Grid -->
+  <main class="main-content">
+    <div class="card-grid">
+
+      <a href="Skin.html" class="card">
+        <div class="card-image-container">
+          <img src="images/SkinDiagram.png" alt="Skin Diagram">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Skin Diagram</h2>
+        </div>
       </a>
-    </div>
-    <div>
-      <a href="/Bones.html">
-        <img src="images/Foot_Cover.jpg" alt="" width="600" height="425" title="Animation">
-        <span>Foot</span>
-        </a>
-      </div>
-    <div>
-    <a href="/Glock.html">
-      <img src="images/Glock.png" alt="" width="600" height="425" title="odl">         
-      <span>Glock</span>
+
+      <a href="Mito.html" class="card">
+        <div class="card-image-container">
+          <img src="images/Mito_cover.png" alt="Mitochondria">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Mitochondria</h2>
+        </div>
       </a>
-    </div>
 
-  <div>
-  <a href="/Smith.html">
-    <img src="images/SmithWesson.png" alt="" width="600" height="425" title="Art">
-    <span>SMithAndWesson</span>
-    </a>
-  </div>
-
-  <div>
-    <a href="/Uzi.html">
-      <img src="images/Uzi_Cover.png" alt="" width="600" height="425" title="Art">
-      <span>Uzi</span>
+      <a href="Bones.html" class="card">
+        <div class="card-image-container">
+          <img src="images/Foot_Cover.jpg" alt="Foot Bones">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Foot Bones</h2>
+        </div>
       </a>
+
+      <a href="Glock.html" class="card">
+        <div class="card-image-container">
+          <img src="images/Glock.png" alt="Glock">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Glock</h2>
+        </div>
+      </a>
+
+      <a href="Smith.html" class="card">
+        <div class="card-image-container">
+          <img src="images/SmithWesson.png" alt="Smith & Wesson">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Smith & Wesson</h2>
+        </div>
+      </a>
+
+      <a href="Uzi.html" class="card">
+        <div class="card-image-container">
+          <img src="images/Uzi_Cover.png" alt="Uzi">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Uzi</h2>
+        </div>
+      </a>
+
+      <a href="Room.html" class="card">
+        <div class="card-image-container">
+          <img src="images/Room.png" alt="Room Environment">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Room Environment</h2>
+        </div>
+      </a>
+
+      <a href="Lumbar.html" class="card">
+        <div class="card-image-container">
+          <img src="images/Lumbar.jpg" alt="Lumbar Spine">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Lumbar Spine</h2>
+        </div>
+      </a>
+
+      <a href="Euk_Cell.html" class="card">
+        <div class="card-image-container">
+          <img src="images/Euk_Cell.png" alt="Eukaryotic Cell">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Eukaryotic Cell</h2>
+        </div>
+      </a>
+
     </div>
+  </main>
 
-    
-
-    <div>
-      <a href="/Room.html">
-        <img src="images/Room.png" alt="" width="600" height="425" title="Animation">
-        <span>Room</span>
-        </a>
-      </div>
-
-        <div>
-          <a href="/Lumbar.html">
-            <img src="images/Lumbar.jpg" alt="" width="600" height="425" title="Animation">
-            <span>Lumbar</span>
-            </a>
-          </div>
-
-          <div>
-            <a href="/Euk_Cell.html">
-              <img src="images/Euk_Cell.png" alt="" width="600" height="425" title="Animation">
-              <span>Lumbar</span>
-              </a>
-            </div>
-    
-</header>
-<script src="app.js"></script>
-
+  <script src="app.js"></script>
 </body>
-</html>   
+
+</html>

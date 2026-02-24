@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Animations</title>
-  <link rel="stylesheet" href="Animations_style.css" />
+  <title>Animations | Sey(Maple)Yeaple</title>
+  <link rel="stylesheet" href="clean_style.css" />
 </head>
-<body>
-  
+
+<body class="animations-page">
   <!-- Navbar -->
   <nav class="navbar">
     <div class="navbar__container">
-      <a href="/" id="navbar__logo">
+      <a href="index.html" id="navbar__logo">
         <img src="images/logo.png" alt="SeyMaple Logo" class="logo-img" />
         <span>SeyMaple</span>
       </a>
-      
+
       <button id="mobile-menu" class="navbar__toggle">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -24,8 +25,8 @@
       </button>
 
       <ul class="navbar__menu">
-        <li class="navbar__item"><a href="/" class="navbar__links">Home</a></li>
-        <li class="navbar__item"><a href="/Odl.html" class="navbar__links">Odl</a></li>
+        <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="Odl.html" class="navbar__links">The Grove Center</a></li>
         <li class="navbar__item"><a href="Art.html" class="navbar__links">Art</a></li>
         <li class="navbar__item"><a href="Animations.html" class="navbar__links">Animations</a></li>
         <li class="navbar__item"><a href="About.html" class="navbar__links">About</a></li>
@@ -33,65 +34,96 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <div class="hero" id="home">
+  <!-- Page Header -->
+  <header class="page-header">
     <div class="hero__container">
-      <h1 class="hero__heading">Animations</h1>
-      <p class="hero__description">Projects</p>
-    </div>
-  </div>
-
-  <!-- Video Grid -->
-  <header class="video-grid">
-    <div class="video-wrapper">
-      <iframe src="https://player.vimeo.com/video/537924307" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="The Artifact"></iframe>
-    </div>
-
-    <div class="video-wrapper">
-      <iframe src="https://player.vimeo.com/video/476017113" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Parallel Dimensions"></iframe>
-    </div>
-
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/3jsCRx2_uX0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="SendOff"></iframe>
-    </div>
-
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/BoiYTiaUBZc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="The Cave"></iframe>
-    </div>
-
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/yAYCwjHTwnM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Project"></iframe>
-    </div>
-
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/H-vYhsgSDQk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Project"></iframe>
-    </div>
-
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/9eoyPqMP3n8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Project"></iframe>
-    </div>
-
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/5j-xl_pyAXo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Project"></iframe>
-    </div>
-
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/HrkphGDEM3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Project"></iframe>
-    </div>
-
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/MOVqHNazEq0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Project"></iframe>
-    </div>
-
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/pu8MwRUVqLg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Project"></iframe>
-    </div>
-
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/IfuYEoVF8UE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Project"></iframe>
+      <h1 class="page-title">Animations</h1>
+      <p class="page-subtitle">Personal Projects and Experiments</p>
     </div>
   </header>
 
+  <!-- Video Grid -->
+  <main class="main-content">
+    <div class="video-stream">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/MTBEDfppwrg"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen title="New Animation"></iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://player.vimeo.com/video/537924307" allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen title="The Artifact"></iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://player.vimeo.com/video/476017113" allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen title="Parallel Dimensions"></iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/3jsCRx2_uX0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen title="SendOff"></iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/BoiYTiaUBZc"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen title="The Cave"></iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/yAYCwjHTwnM"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen title="Project"></iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/H-vYhsgSDQk"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen title="Project"></iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/9eoyPqMP3n8"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen title="Project"></iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/5j-xl_pyAXo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen title="Project"></iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/HrkphGDEM3E"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen title="Project"></iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/MOVqHNazEq0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen title="Project"></iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/pu8MwRUVqLg"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen title="Project"></iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/IfuYEoVF8UE"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen title="Project"></iframe>
+      </div>
+    </div>
+  </main>
+
   <script src="app.js"></script>
 </body>
+
 </html>

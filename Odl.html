@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sey(Maple)Yeaple</title>
-    <link rel="stylesheet" href="odl_style.css" />
-  </head>
-  <body>
-    
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Grove Center | Sey(Maple)Yeaple</title>
+  <link rel="stylesheet" href="clean_style.css" />
+</head>
+
+<body class="grove-center-page">
   <!-- Navbar -->
   <nav class="navbar">
     <div class="navbar__container">
-      <a href="/" id="navbar__logo">
+      <a href="index.html" id="navbar__logo">
         <img src="images/logo.png" alt="SeyMaple Logo" class="logo-img" />
         <span>SeyMaple</span>
       </a>
-      
+
       <button id="mobile-menu" class="navbar__toggle">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -24,8 +25,8 @@
       </button>
 
       <ul class="navbar__menu">
-        <li class="navbar__item"><a href="/" class="navbar__links">Home</a></li>
-        <li class="navbar__item"><a href="/Odl.html" class="navbar__links">Odl</a></li>
+        <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="Odl.html" class="navbar__links">The Grove Center</a></li>
         <li class="navbar__item"><a href="Art.html" class="navbar__links">Art</a></li>
         <li class="navbar__item"><a href="Animations.html" class="navbar__links">Animations</a></li>
         <li class="navbar__item"><a href="About.html" class="navbar__links">About</a></li>
@@ -33,40 +34,52 @@
     </div>
   </nav>
 
-    <!--hero Section-->
-    <div class="hero" id="home">
-      <div class="hero__container">
-        <h1 Class="hero__heading">ODL</h1>
-        <p Class="hero__description">Projects</p>
-        <p Class="Hero__definition">(Current Employment)</p>
-       
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="hero__container">
+      <h1 class="page-title">The Grove Center</h1>
+      <p class="page-subtitle">Work at Penn State's Eberly College of Science</p>
     </div>
-    </div>
-  </div>
-</div>
-<header >
-    <div>
-  <a href="/DEMO.html">
-    <img src="images/DEMO_COVER.jpg" alt="" width="600" height="425" title="odl">         
-    <span>Demos</span>
-    </a>
-  </div>
+  </header>
 
-  <div>
-  <a href="/3D_Models.html">
-    <img src="images/Models_Cover_New.png" alt="" width="600" height="425" title="Art">
-    <span>Art</span>
-    </a>
-  </div>
-    <div>
-    <a href="/Odl_Animations.html">
-      <img src="images/Animations_ODL.png" alt="" width="600" height="425" title="Animation">
-      <span>Animation</span>
+  <!-- Card Grid -->
+  <main class="main-content">
+    <div class="card-grid">
+
+      <a href="DEMO.html" class="card">
+        <div class="card-image-container">
+          <img src="images/DEMO_COVER.jpg" alt="Demos Cover">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Demos</h2>
+          <p>Interactive project demonstrations</p>
+        </div>
       </a>
-    </div>
-  
-</header>
-<script src="app.js"></script>
 
+      <a href="3D_Models.html" class="card">
+        <div class="card-image-container">
+          <img src="images/Models_Cover_New.png" alt="3D Models Cover">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">3D Models</h2>
+          <p>Professional assets and modeling work</p>
+        </div>
+      </a>
+
+      <a href="Odl_Animations.html" class="card">
+        <div class="card-image-container">
+          <img src="images/Animations_ODL.png" alt="Animations Cover">
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Animations</h2>
+          <p>Motion graphics and video productions</p>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <script src="app.js"></script>
 </body>
-</html>   
+
+</html>
