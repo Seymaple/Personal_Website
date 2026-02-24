@@ -122,8 +122,11 @@ if (document.body.classList.contains('animations-page') && videoWrappers.length 
     videoWrappers.forEach(w => dotObserver.observe(w));
 }
 
-/* Art Gallery Lightbox Logic */
+/* Art Gallery Lightbox Logic — only runs if gallery images exist on this page */
 document.addEventListener('DOMContentLoaded', () => {
+    const galleryImages = document.querySelectorAll('.gallery-item img');
+    if (galleryImages.length === 0) return; // No gallery on this page, skip entirely
+
     // 1. Create Lightbox Structure
     const lightbox = document.createElement('div');
     lightbox.id = 'lightbox';
@@ -138,7 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightboxClose = lightbox.querySelector('.lightbox-close');
 
     // 2. Open Lightbox on Gallery Image Click
-    const galleryImages = document.querySelectorAll('.gallery-item img');
     galleryImages.forEach(img => {
         img.addEventListener('click', () => {
             lightboxImg.src = img.src;
