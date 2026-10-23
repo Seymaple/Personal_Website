@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;800&display=swap');
 
 /* Global Reset & Typography */
 * {
@@ -641,4 +641,635 @@ body.user-is-scrolling .scroll-arrow {
 /* Section headings (Videos, Animated Concepts, etc.) */
 .grove-center-page h2 {
     color: #4a7729 !important;
+}
+
+/* ---------------- EDITORIAL PORTFOLIO DESIGN SYSTEM ---------------- */
+:root {
+    --paper: #f3f3ef;
+    --surface: #fafaf7;
+    --ink: #171917;
+    --muted: #696d68;
+    --line: rgba(23, 25, 23, 0.17);
+    --accent: #315ee8;
+    --green: #4a7729;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: var(--paper);
+}
+
+body {
+    background: var(--paper);
+    background-image: none;
+    background-attachment: initial;
+    color: var(--ink);
+    font-family: 'Outfit', 'Arial', sans-serif;
+    line-height: 1.55;
+    animation: none;
+}
+
+a {
+    color: inherit;
+}
+
+.navbar {
+    height: 78px;
+    background: rgba(243, 243, 239, 0.96);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(16px);
+}
+
+.navbar__container {
+    height: 78px;
+    max-width: 1600px;
+    padding: 0 clamp(22px, 5vw, 76px);
+}
+
+#navbar__logo {
+    gap: 10px;
+}
+
+#navbar__logo span {
+    color: var(--ink);
+    background: none;
+    -webkit-text-fill-color: currentColor;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+
+#navbar__logo {
+    font-family: 'Outfit', sans-serif;
+}
+
+.logo-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.navbar__menu {
+    gap: clamp(2px, 1vw, 18px);
+}
+
+.navbar__item {
+    height: 78px;
+}
+
+.navbar__links {
+    position: relative;
+    padding: 0 clamp(10px, 1.35vw, 22px);
+    color: var(--ink);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.94rem;
+    font-weight: 500;
+    transition: color 180ms ease;
+}
+
+.navbar__links:hover {
+    color: var(--accent);
+}
+
+.navbar__toggle .bar {
+    display: none;
+}
+
+button#mobile-menu {
+    display: none;
+}
+
+.page-header {
+    min-height: 300px;
+    display: flex;
+    align-items: end;
+    margin: 0;
+    padding: clamp(48px, 8vw, 108px) clamp(22px, 5vw, 76px) 34px;
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+    text-align: left;
+    scroll-snap-align: start;
+}
+
+.page-header .hero__container {
+    width: 100%;
+    max-width: 1448px;
+    margin: 0 auto;
+}
+
+.page-title {
+    margin: 0 0 8px;
+    color: var(--ink);
+    background: none;
+    -webkit-text-fill-color: currentColor;
+    font-size: clamp(3.5rem, 9vw, 8rem);
+    font-weight: 500;
+    letter-spacing: -0.085em;
+    line-height: 0.95;
+    text-shadow: none;
+}
+
+.page-subtitle {
+    max-width: 680px;
+    margin: 18px 0 0;
+    color: var(--muted);
+    font-size: clamp(1rem, 1.7vw, 1.35rem);
+    line-height: 1.4;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 44px clamp(22px, 5vw, 76px) 100px;
+}
+
+.about-grid {
+    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.5fr);
+    gap: clamp(28px, 6vw, 84px);
+    padding: clamp(22px, 4vw, 56px);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    background: var(--surface);
+    box-shadow: none;
+}
+
+.about-image img {
+    display: block;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.about-text h2 {
+    margin-bottom: 22px;
+    color: var(--accent);
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+}
+
+.about-text p {
+    color: #3d413d;
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+.contact-section {
+    border-color: var(--line);
+}
+
+.social-links {
+    gap: 10px;
+}
+
+.social-btn {
+    padding: 11px 16px;
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background: transparent;
+    transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.social-btn:hover {
+    transform: none;
+    border-color: var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(12px, 1.5vw, 22px);
+}
+
+.gallery-item {
+    border-radius: 0;
+    background: #deded8;
+    transition: transform 250ms ease;
+}
+
+.gallery-item:hover {
+    z-index: 2;
+    transform: translateY(-4px);
+    box-shadow: none;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.18 / 1;
+    object-fit: cover;
+}
+
+.card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr));
+    gap: clamp(14px, 2vw, 28px);
+    padding: 0;
+}
+
+.card {
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background: var(--surface);
+    text-align: left;
+    box-shadow: none;
+    transition: transform 300ms ease, border-color 300ms ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(23, 25, 23, 0.5);
+    box-shadow: none;
+}
+
+.card-image-container {
+    height: auto;
+    aspect-ratio: 1.5 / 1;
+    background: #deded8;
+}
+
+.card-image-container img {
+    transition: transform 500ms cubic-bezier(.2, .7, .2, 1);
+}
+
+.card-content {
+    min-height: 104px;
+    align-items: flex-start;
+    padding: 20px 22px 24px;
+}
+
+.card-title {
+    margin: 0;
+    color: var(--ink);
+    background: none;
+    -webkit-text-fill-color: currentColor;
+    font-size: clamp(1.5rem, 2.4vw, 2rem);
+    font-weight: 500;
+    letter-spacing: -0.055em;
+}
+
+.card-content p {
+    margin-top: 5px;
+    color: var(--muted);
+}
+
+.video-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
+    gap: clamp(16px, 2vw, 28px);
+    padding: 0;
+}
+
+.video-wrapper {
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background: #161816;
+    box-shadow: none;
+    transition: transform 250ms ease;
+}
+
+.video-wrapper:hover {
+    transform: translateY(-3px);
+    box-shadow: none;
+}
+
+.video-stream {
+    gap: clamp(65px, 10vw, 140px);
+    padding: 22px 0 40px;
+}
+
+.video-stream .video-wrapper {
+    max-width: 1380px;
+    border: 1px solid var(--line);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.video-wrapper iframe {
+    border-radius: 0;
+}
+
+.scroll-arrow {
+    color: var(--accent);
+}
+
+.video-dot {
+    background-color: var(--accent);
+}
+
+.video-dot.active {
+    border-color: var(--accent);
+}
+
+.lightbox-modal {
+    background: rgba(16, 17, 16, 0.96);
+}
+
+.lightbox-content {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.lightbox-close:hover {
+    color: #aebfff;
+}
+
+.grove-center-page .page-title,
+.grove-center-page .card-title {
+    color: var(--green);
+    background: none;
+    -webkit-text-fill-color: currentColor;
+}
+
+.grove-center-page h2 {
+    color: var(--green) !important;
+}
+
+@media (max-width: 960px) {
+    .navbar__menu {
+        top: 78px;
+        width: 100%;
+        padding: 8px 22px 18px;
+        border-bottom: 1px solid var(--line);
+        background: var(--paper);
+        box-shadow: 0 18px 25px rgba(23, 25, 23, 0.08);
+    }
+
+    .navbar__item {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar__links {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 14px 0;
+        color: var(--ink);
+        font-size: 1rem;
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        width: 26px;
+        height: 2px;
+        margin: 5px auto;
+        background: var(--ink);
+    }
+
+    button#mobile-menu {
+        display: block;
+        padding: 10px;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .about-grid {
+        grid-template-columns: minmax(200px, 0.7fr) minmax(0, 1.3fr);
+    }
+}
+
+@media (max-width: 680px) {
+    .page-header {
+        min-height: 250px;
+        padding-top: 60px;
+    }
+
+    .page-title {
+        font-size: clamp(3.5rem, 16vw, 5.5rem);
+    }
+
+    .main-content {
+        padding-top: 26px;
+        padding-bottom: 64px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 20px;
+    }
+
+    .about-image img {
+        max-height: 520px;
+        object-fit: cover;
+        object-position: center 35%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        aspect-ratio: 1 / 1;
+    }
+
+    .video-stream .video-wrapper {
+        opacity: 0.55;
+    }
+
+    .video-stream .video-wrapper.visible {
+        opacity: 1;
+    }
+
+    .video-dot-nav {
+        right: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Grove Center landing page: Penn State-inspired professional identity. */
+body.grove-home-page {
+    --grove-navy: #001e44;
+    --grove-green: #496f2d;
+    --grove-rule: #173c68;
+    background: #fff;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grove-home-page .grove-shell {
+    width: min(calc(100% - 48px), 1360px);
+    margin: 0 auto;
+}
+
+.grove-utility-bar { min-height: 38px; background: #fff; }
+.grove-utility-bar .grove-shell {
+    display: flex;
+    min-height: 38px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(16px, 2.5vw, 38px);
+}
+.grove-utility-bar a {
+    color: #333;
+    font-size: .75rem;
+    font-style: italic;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+.grove-utility-bar a:hover { color: #1e407c; text-decoration: underline; }
+
+.grove-masthead { background: #fff; }
+.grove-masthead__inner {
+    display: flex;
+    min-height: 150px;
+    align-items: center;
+    gap: clamp(30px, 8vw, 130px);
+    padding: 20px 0;
+}
+.grove-partner-logo, .grove-center-logo { display: flex; align-items: center; }
+.grove-partner-logo img { display: block; width: clamp(190px, 23vw, 285px); height: auto; }
+.grove-center-logo img { display: block; width: clamp(250px, 31vw, 380px); height: auto; }
+.grove-masthead__note { margin-left: auto; color: #5a5a5a; font-size: .85rem; text-align: right; }
+.grove-masthead__note span { padding: 0 4px; color: var(--grove-green); }
+
+.grove-home-page .navbar {
+    position: relative;
+    height: auto;
+    min-height: 74px;
+    background: var(--grove-navy);
+    border: 0;
+    backdrop-filter: none;
+}
+.grove-home-page .navbar__container { min-height: 74px; height: auto; max-width: 1360px; padding: 0 24px; }
+.grove-home-page #navbar__logo { gap: 9px; font-family: 'Outfit', sans-serif; }
+.grove-home-page #navbar__logo span {
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    font-size: 1.08rem;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+.grove-home-page .logo-img { width: 30px; height: 30px; }
+.grove-home-page .navbar__menu { gap: clamp(0px, .7vw, 14px); }
+.grove-home-page .navbar__item { height: 74px; }
+.grove-home-page .navbar__links {
+    padding: 0 clamp(10px, 1.2vw, 19px);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(.82rem, 1.05vw, 1rem);
+    font-weight: 500;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+}
+.grove-home-page .navbar__links::after { right: 18px; bottom: 15px; left: 18px; height: 2px; }
+.grove-home-page .navbar__links:hover { color: #d6e3f2; }
+
+.grove-home-hero {
+    min-height: clamp(300px, 42vw, 560px);
+    background: #e2e5e0 url('https://grovecenter.science.psu.edu/themes/grove_center/images/theme/temp-banner-1497-490.png') center / cover no-repeat;
+}
+.grove-home-page .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+.grove-home-page .main-content { max-width: 1360px; padding: 36px 24px 100px; }
+.grove-work-section { max-width: 1120px; margin: 0 auto; }
+.grove-section-heading { margin-bottom: 26px; padding-bottom: 16px; border-bottom: 3px solid var(--grove-rule); }
+.grove-section-heading .grove-eyebrow {
+    margin: 0 0 6px;
+    color: var(--grove-green);
+    font-size: .76rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.grove-section-heading h2 {
+    margin: 0;
+    color: var(--grove-navy);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1.8rem, 3.3vw, 2.6rem);
+    font-weight: 700;
+    letter-spacing: .005em;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+.grove-section-intro { max-width: 720px; margin: 10px 0 0; color: #414141; font-size: 1.05rem; line-height: 1.55; }
+.grove-home-page .card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; padding: 0; }
+.grove-home-page .card {
+    border: 1px solid #d5d9de;
+    border-bottom: 5px solid var(--grove-navy);
+    border-radius: 0;
+    background: #fff;
+    box-shadow: 0 3px 11px rgba(0, 30, 68, .09);
+    text-align: left;
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+.grove-home-page .card:hover {
+    transform: translateY(-4px);
+    border-color: #bac7d6;
+    border-bottom-color: var(--grove-green);
+    box-shadow: 0 9px 22px rgba(0, 30, 68, .16);
+}
+.grove-home-page .card-image-container { aspect-ratio: 1.35 / 1; border-bottom: 1px solid #e2e5e8; }
+.grove-home-page .card-content { min-height: 110px; align-items: flex-start; padding: 17px 20px 21px; }
+.grove-home-page .card-title {
+    color: var(--grove-navy);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.42rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.grove-home-page .card-content p { margin-top: 8px; color: #444; font-size: .98rem; line-height: 1.45; }
+
+@media (max-width: 960px) {
+    .grove-home-page .navbar__container { padding: 0 24px; }
+    .grove-home-page .navbar__menu { top: 74px; padding: 8px 24px 20px; border: 0; background: var(--grove-navy); box-shadow: 0 15px 20px rgba(0,0,0,.16); }
+    .grove-home-page .navbar__links { min-height: 50px; color: #fff; }
+    .grove-home-page .navbar__toggle .bar { background: #fff; }
+    .grove-home-page button#mobile-menu { background: transparent; }
+}
+@media (max-width: 720px) {
+    .grove-home-page .grove-shell { width: calc(100% - 36px); }
+    .grove-masthead__inner { flex-wrap: wrap; min-height: 0; gap: 16px 24px; padding: 24px 0; }
+    .grove-partner-logo img { width: clamp(145px, 42vw, 220px); }
+    .grove-center-logo img { width: clamp(200px, 54vw, 300px); }
+    .grove-masthead__note { width: 100%; margin: 0; text-align: left; }
+    .grove-utility-bar .grove-shell { justify-content: center; gap: 14px; }
+    .grove-utility-bar a { font-size: .62rem; }
+    .grove-home-hero { min-height: 250px; background-position: center; }
+    .grove-home-page .main-content { padding: 30px 18px 64px; }
+    .grove-home-page .card-grid { grid-template-columns: 1fr; gap: 18px; }
+    .grove-home-page .card-image-container { aspect-ratio: 1.55 / 1; }
+}
+
+/* Personal portfolio pages: carry the homepage background and open typography through. */
+body:not(.grove-center-page) {
+    background-color: var(--paper);
+    background-image:
+        linear-gradient(rgba(243, 243, 239, 0.52), rgba(243, 243, 239, 0.52)),
+        url(images/Background_Cover.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body:not(.grove-center-page) .page-header {
+    background: transparent;
+}
+
+body:not(.grove-center-page) .page-subtitle {
+    color: #fff;
+    font-size: clamp(1.15rem, 1.95vw, 1.6rem);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
 }
