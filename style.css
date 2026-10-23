@@ -565,10 +565,20 @@ button#mobile-menu {
 
 @media (max-width: 960px) {
   .navbar__menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
     top: 78px;
+    left: 0;
+    width: 100%;
     padding: 8px 22px 18px;
     border-bottom: 1px solid var(--line);
     background: var(--paper);
+    z-index: 999;
+  }
+
+  .navbar__menu.active {
+    display: flex;
   }
 
   .navbar__links {
@@ -583,11 +593,19 @@ button#mobile-menu {
   }
 
   .navbar__toggle .bar {
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin: 5px auto;
     background: var(--ink);
   }
 
   button#mobile-menu {
+    display: block;
     padding: 10px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
   }
 }
 
