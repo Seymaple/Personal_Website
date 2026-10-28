@@ -8,6 +8,25 @@ menu.addEventListener('click', function () {
 }
 );
 
+/* Play the project-card reveal before navigating on mobile. */
+document.querySelectorAll('.hero__images a').forEach((link) => {
+    let isAnimating = false;
+
+    link.addEventListener('click', (event) => {
+        if (!window.matchMedia('(max-width: 720px)').matches) return;
+
+        event.preventDefault();
+        if (isAnimating) return;
+
+        isAnimating = true;
+        link.classList.add('is-tap-animating');
+
+        window.setTimeout(() => {
+            window.location.assign(link.href);
+        }, 650);
+    });
+});
+
 /* Scroll Animation Observer */
 const observerOptions = {
     threshold: 0.15, // Trigger when 15% visible
